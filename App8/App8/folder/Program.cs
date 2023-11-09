@@ -25,14 +25,14 @@ namespace App8
             
             // Запись и чтение из бинарного файла;
             Console.WriteLine("Сериализация в бинарный файл: ");
-            SerializerDeserializer.SaveBinFile(pathToBinaryFile, queuePatients);
-            QueuePatients binLoadPatient = SerializerDeserializer.LoadFromBin(pathToBinaryFile);
+            DataSerializer.SaveBinFile(pathToBinaryFile, queuePatients);
+            QueuePatients binLoadPatient = DataSerializer.LoadFromBin(pathToBinaryFile);
             Console.WriteLine(binLoadPatient);
             
             // Чтение и запись из JSON файла;
             Console.WriteLine("Сериализация в JSON файл: ");
-            SerializerDeserializer.SaveToJson(pathToJsonFile, queuePatients);
-            QueuePatients jsonLoadPatient = SerializerDeserializer.LoadFromJson(pathToJsonFile);
+            DataSerializer.SaveToJson(pathToJsonFile, queuePatients);
+            QueuePatients jsonLoadPatient = DataSerializer.LoadFromJson(pathToJsonFile);
             Console.WriteLine(jsonLoadPatient);
 
         }

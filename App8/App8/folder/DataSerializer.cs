@@ -5,7 +5,7 @@ using System.Text;
 
 namespace App8
 {
-    public class SerializerDeserializer
+    public class DataSerializer
     {
 
         
